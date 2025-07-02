@@ -23,7 +23,7 @@ if($result->num_rows==1){ //if any one data found go inside it
     $row = $result->fetch_assoc();
     if($password == $row['customer_pwd']){
 
-    //session will be created only if users email and passwords matched
+    //session ill be created only if users email and passwords matched
 	$_SESSION['id'] = $row['customer_id'];
 	$_SESSION['customer_role'] = $row['customer_role'];
 	$_SESSION['customer_name'] = $row['customer_name'];
